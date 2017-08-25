@@ -10,7 +10,7 @@
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <a href="<?php bloginfo('template_url');?>/subscribe" class="btn btn-orange">Subscribe</a>
+                <a href="/subscribe" class="btn btn-orange">Subscribe</a>
             </div>
         </div>
     </div>

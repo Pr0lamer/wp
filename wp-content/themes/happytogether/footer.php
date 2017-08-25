@@ -1,88 +1,60 @@
-
-<footer class="footer" id="footer">
+<footer class="b-footer" id="b-footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <a href="/" class="footer__logo">
-                    <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
-                </a>
+            <div class="col-sm-offset-1 col-sm-4 col-md-4">
+            
+            </div>
+            
+            <div class="col-sm-6 col-md-6">
+                
+                <ul class="social-btns">
+                    <li class="social-btn ok">
+                        <a href="http://www.happy-together.webdevlair.com/#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-btn fb">
+                        <a href="http://www.happy-together.webdevlair.com/#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-btn ytube">
+                        <a href="http://www.happy-together.webdevlair.com/#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-btn insta">
+                        <a href="http://www.happy-together.webdevlair.com/#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-12 col-md-offset-2 col-md-8">
-                <p class="footer__desc text-center">As the content mediums constantly change it takes an accomplished team of advertising professionals to help your business adapt across the board and boost your sales!</p>
-            </div>
-        </div>
-
+        
         <div class="row">
             <div class="col-sm-12">
-                <div class="social-buttons">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item__icon">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="">
-                                </div>
-                                <div class="item__cnt">
-                                    <strong>Facebook</strong>
-                                    12 345
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item__icon">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="">
-                                </div>
-                                <div class="item__cnt">
-                                    <strong>Twitter</strong>
-                                    5 800
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item__icon">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/youtube.png" alt="">
-                                </div>
-                                <div class="item__cnt">
-                                    <strong>Youtube</strong>
-                                    555
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item__icon">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/google+.png" alt="">
-                                </div>
-                                <div class="item__cnt">
-                                    <strong>Google</strong>
-                                    5 800
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <?php
+                                 wp_nav_menu( array( 
+                                'theme_location' => 'htsecondary', 
+                                'container_class' => 'footer-menu',
+                                'items_wrap'      => '<ul class="nav navbar-nav">%3$s</ul>',
+                                 ) ); 
+                             ?>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="f-copy">
+                    <p class="text-center">© 2017</p>
+
+                    <p class="text-center">Created By <a href="http://www.happy-together.webdevlair.com/webdevlair.com">WebDevLair.com</a></p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="copy text-center">&copy; <?php echo Date("Y"); ?> — Wordica. All Rights Reserved. Designed & Developed by Wordica.net</p>
             </div>
         </div>
     </div>
 </footer>
-
 <?php wp_footer(); ?>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/classie.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/uisearch.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.0.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/youtube.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/slick/slick.js"></script>
 </body>
-</html> <!-- lfds fsol -->
+</html>

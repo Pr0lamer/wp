@@ -1,117 +1,65 @@
 
 <?php get_header(); ?>
-
-<div id="content">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="posts__lst">
-                
-					<?php 
-					query_posts('posts_per_page=1');
-					    if(have_posts()):
-					    	while(have_posts()) : the_post();
-					?>
-
-                    <div class="post post--no-image">
-                        <h2 class="post__name"><a class="post__link" href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                        <p class="post__short-desc"><?php the_excerpt(); ?></p>
-                
-                        <?php echo get_the_tag_list('<ul class="tags-lst"><li class="tag">', '</li><li class="tag">', '</li></ul>' ); ?>
-                
-                        <div class="row">
-                            <!-- date/author -->
-                            <div class="col-sm-6 text-left">
-                                <span class="post__date"><?php echo get_the_date('F '.'j'.', '.'Y'); ?></span>
-                                <span class="post__author">By <a class="post__author__name" href="#"><?php the_author();?></a></span>
-                            </div>
-                
-                            <!-- actions -->
-                            <div class="col-sm-6 text-right">
-                                <div class="post__actions__lst">
-                                    <span class="post__action post__action--heart">123 234</span>
-                                    <span class="post__action post__action--comments">123 234</span>
-                                    <span class="post__action post__action--eye"><?php if(function_exists('the_views')) { the_views(); } ?>﻿</span>
-                                </div>
-                            </div>
-                        </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-offset-1 col-md-10">
+            <div id="home-content">
+                <div class="b-home__services">
+                    <div class="services services--1">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/wedding"><span>ПРОВЕДЕНИЕ СВАДЕБ</span></a>
                     </div>
-                    <?php endwhile; wp_reset_query();
-                else :
-                        echo '<p>No content</p>';
-                endif; ?>
 
-            
-            <?php 
-					    if(have_posts()):
-					    	while(have_posts()) : the_post();
-					?>
-
-                    <div class="post">
-                        <h2 class="post__name">
-                            <a class="post__link" href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                        </h2>
-            
-                        <div class="post__image">
-                            <?php the_post_thumbnail(); ?>
-                			<?php echo get_the_tag_list('<ul class="tags-lst"><li class="tag">', '</li><li class="tag">', '</li></ul>' ); ?>
-                            
-                                
-                                   
-                        </div>
-                
-                        <div class="row">
-                            <!-- date/author -->
-                            <div class="col-sm-6 text-left">
-                                <span class="post__date"><?php echo get_the_date('F '.'j'.', '.'Y'); ?></span> 
-                                <span class="post__author">By <a class="post__author__name" href="#"><?php the_author();?></a></span>
-                            </div>
-                
-                            <!-- actions -->
-                            <div class="col-sm-6 text-right">
-                                <div class="post__actions__lst">
-                                    <span class="post__action post__action--heart">123 234</span>
-                                    <span class="post__action post__action--comments">123 234</span>
-                                    <span class="post__action post__action--eye"><?php if(function_exists('the_views')) { the_views(); } ?>﻿</span>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <p class="post__short-desc"><?php the_excerpt(); ?></p>
+                    <div class="services services--2">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vecherinki"><span>ВЕЧЕРИНКИ</span></a>
                     </div>
-                
-                    
-                    
-                    <?php endwhile;
 
-            	else :
-            			echo '<p>No content</p>';
-            	endif; ?>
+                    <div class="services services--3">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/nizkij-dym"><span>НИЗКИЙ ДЫМ</span></a>
+                    </div>
+
+                    <div class="services services--4">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vyezdnye-ceremonii"><span>ВЫЕЗДНЫЕ
+                            ЦЕРЕМОНИИ</span></a>
+                    </div>
+
+                    <div class="services services--5">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/korporativy"><span>КОРПОРАТИВЫ</span></a>
+                    </div>
+
+                    <div class="services services--6">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/dni-rozhdenija"><span>ДНИ РОЖДЕНИЯ</span></a>
+                    </div>
+
+                    <div class="services services--7">
+                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vypusknye"><span>ВЫПУСКНЫЕ</span></a>
+                    </div>
                 </div>
 
-                <section class="pagination">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <!-- <ul class="pagination">
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#"><span>&rarr;</span></a></li>
-                            </ul> -->
-                            <?php echo bittersweet_pagination(); ?>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <?php get_sidebar(); ?>
+                <section class="b-acquaintance">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center section__title">Давайте знакомиться</h2>
             
+            <div class="page__cnt">
+                <p>Здравствуйте, Меня зовут, Елена Попова, Я рада приветствовать Вас на своем сайте. Без лишней скромности скажу, что Я ведущая, которая оставляет после проделанной 
+работы только яркие и положительные воспоминания. И так происходит всегда. </p>
+<p>Современное торжество с каждым годом становится все более требовательным к нововведениям. 
+Заказчик неустанно пытается удивить своих гостей, сделать праздник лучшим и не таким как у всех. 
+Я полностью поддерживаю такое стремление, и постоянно нахожусь в поисках чего-то нового так как знаю - то,что было актуально еще вчера, 
+сегодня не найдет для себя место в современном сценарии. </p>
+<p>Программы, которые Я предлагаю Вашему вниманию, отвечают самым высоким требованиям, Я не просто ведущая, Я стану Вашим другом и помощником в важный для Вас день.</p>
+            </div>
+        
+            <div class="myvideo">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/tEsz1d77ZYE" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
+</section>
+            </div>
+        </div>
     </div>
+</div>
 
-
-<?php get_template_part('subscribe-block') ?>
-
+<?php get_template_part('form-block') ?>
 <?php get_footer(); ?>
