@@ -28,7 +28,8 @@
                 </form>
                 
             </div>
-            <div class="hide"> <?php wpforms_display( 136, false, false ); ?> </div>
+            <div class="hide"> <?php echo do_shortcode( '[wpforms id="136" title="false" description="false"]' ); ?> </div>
+
         </div>
     </div>
 </div>
