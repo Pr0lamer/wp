@@ -11,7 +11,7 @@
 					<?php 
 					query_posts('posts_per_page=1');
 					    if(have_posts()):
-					    	while(have_posts()) : the_post(); 
+					    	while(have_posts()) : the_post();
 					?>
 
                     <div class="post post--no-image">
@@ -32,7 +32,7 @@
                                 <div class="post__actions__lst">
                                     <span class="post__action post__action--heart">123 234</span>
                                     <span class="post__action post__action--comments">123 234</span>
-                                    <span class="post__action post__action--eye"><?php echo getPostViews(get_the_ID()); ?>﻿</span>
+                                    <span class="post__action post__action--eye"><?php if(function_exists('the_views')) { the_views(); } ?>﻿</span>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                                 <div class="post__actions__lst">
                                     <span class="post__action post__action--heart">123 234</span>
                                     <span class="post__action post__action--comments">123 234</span>
-                                    <span class="post__action post__action--eye"><?php echo getPostViews(get_the_ID()); ?>﻿</span>
+                                    <span class="post__action post__action--eye"><?php if(function_exists('the_views')) { the_views(); } ?>﻿</span>
                                 </div>
                             </div>
                         </div>

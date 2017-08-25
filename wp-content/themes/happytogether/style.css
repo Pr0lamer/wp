@@ -5335,29 +5335,29 @@ background-color:#22252b;
     margin-top: 35px; }
 
 /* most popular */
-.most-popular .post + .post {
+.popular-posts .post + .post {
   margin-top: 40px; }
 
-.most-popular .post .post__img {
+.popular-posts .post .post__img {
   float: left;
   width: 72px;
   height: 72px; }
 
-.most-popular .post .post__name {
+.popular-posts .post .post__name {
   padding-left: 92px; }
 
-.most-popular .post .post__link {
+.popular-posts .post .post__link {
   display: inline;
   margin-bottom: 20px;
   font-size: 17px;
   line-height: 1.4;
   color: #54c3eb;
   border-bottom: 1px solid rgba(84, 195, 235, 0.5); }
-  .most-popular .post .post__link:hover {
+  .popular-posts .post .post__link:hover {
     color: #eb8d1d;
     border-bottom: 1px solid rgba(221, 84, 7, 0.5); }
 
-.most-popular .post .post__date {
+.popular-posts .post .post__date {
   padding-left: 92px;
   font-size: 15px;
   line-height: 1.4;
