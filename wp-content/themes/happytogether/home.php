@@ -12,9 +12,9 @@
 
 <div class="row">
     <div class="col-sm-12">
-<?php 
+<?php $catquery = new WP_Query( 'cat=22&posts_per_page=7' );
 					    if(have_posts()):
-					    	while(have_posts()) : the_post();
+					    	while($catquery->have_posts()) : $catquery->the_post();
 					?>
 <div class="services__item">
     <div class="row">

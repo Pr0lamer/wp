@@ -6,32 +6,32 @@
             <div id="home-content">
                 <div class="b-home__services">
                     <div class="services services--1">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/wedding"><span>ПРОВЕДЕНИЕ СВАДЕБ</span></a>
+                        <a class="title" href="/wedding"><span>ПРОВЕДЕНИЕ СВАДЕБ</span></a>
                     </div>
 
                     <div class="services services--2">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vecherinki"><span>ВЕЧЕРИНКИ</span></a>
+                        <a class="title" href="/vecherinki"><span>ВЕЧЕРИНКИ</span></a>
                     </div>
 
                     <div class="services services--3">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/nizkij-dym"><span>НИЗКИЙ ДЫМ</span></a>
+                        <a class="title" href="/nizkij-dym"><span>НИЗКИЙ ДЫМ</span></a>
                     </div>
 
                     <div class="services services--4">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vyezdnye-ceremonii"><span>ВЫЕЗДНЫЕ
+                        <a class="title" href="/vyezdnye-ceremonii"><span>ВЫЕЗДНЫЕ
                             ЦЕРЕМОНИИ</span></a>
                     </div>
 
                     <div class="services services--5">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/korporativy"><span>КОРПОРАТИВЫ</span></a>
+                        <a class="title" href="/korporativy"><span>КОРПОРАТИВЫ</span></a>
                     </div>
 
                     <div class="services services--6">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/dni-rozhdenija"><span>ДНИ РОЖДЕНИЯ</span></a>
+                        <a class="title" href="/dni-rozhdenija"><span>ДНИ РОЖДЕНИЯ</span></a>
                     </div>
 
                     <div class="services services--7">
-                        <a class="title" href="http://www.happy-together.webdevlair.com/services/vypusknye"><span>ВЫПУСКНЫЕ</span></a>
+                        <a class="title" href="/vypusknye"><span>ВЫПУСКНЫЕ</span></a>
                     </div>
                 </div>
 
