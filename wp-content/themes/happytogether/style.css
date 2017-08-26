@@ -481,6 +481,9 @@ figure div {
     font-size: 18px; }
   .services__item .item__price {
     font-size: 30px; }
+    .services__item p{
+    font-size: 18px;
+     }
     .services__item .item__price span {
       display: block; }
   .services__item .btn {
