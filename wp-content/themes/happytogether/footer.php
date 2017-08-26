@@ -49,12 +49,6 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
-<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery-3.2.0.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/youtube.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/fancybox/jquery.fancybox.pack.js"></script>
 
-<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/slick/slick.js"></script>
 </body>
 </html>

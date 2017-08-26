@@ -10,7 +10,7 @@
     <meta name="author" content="webdevlair.com">
 
     <!-- <title>Поздравляем!</title> -->
-    <title>ГЛАВНАЯ - Happy Together</title>
+    <title><?php is_front_page() ? bloginfo('name') : wp_title(''); ?> - <?php bloginfo('name'); ?></title>
     <!--<base href="http://www.happy-together.webdevlair.com/">--><base href=".">
 
 
@@ -45,7 +45,7 @@
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="http://www.happy-together.webdevlair.com/">
+                            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                               <img class="hidden-sm hidden-md hidden-lg" src="<?php bloginfo('template_url'); ?>/img/logo.png" height="38" width="41" alt="logo">
                               </a>
                         </div>
@@ -71,7 +71,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="head">
-                    <a href="http://www.happy-together.webdevlair.com/" class="hidden-xs logo pull-left">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hidden-xs logo pull-left">
                         <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Happy Together">
                     </a>
 
